@@ -1,0 +1,304 @@
+<!--
+    Variant - Default
+-->
+
+<theme>
+<!--  CONFIG | CONFIG | CONFIG | CONFIG | CONFIG  -->    
+    
+    <variables>
+        <rootpath>./</rootpath>
+        <systemFanartImage>${rootpath}/assets/wallpapers/${system.theme}.webp</systemFanartImage>
+    </variables>
+    
+
+    <include>${rootpath}/navigationsounds.xml</include>
+    <include>${rootpath}/colors.xml</include>
+    <include>${rootpath}/config/systems/metadata-global/en-en/_default.xml</include>
+    <include>${rootpath}/config/systems/metadata-global/en-en/${system.theme}.xml</include>
+
+
+
+<!--  SYSTEMVIEW + GAMELIST | SYSTEMVIEW + GAMELIST | SYSTEMVIEW + GAMELIST |  -->
+        <view name="system, gamelist">
+
+            <!--  Nav: First overlay layer  -->
+            <image name="nav-gradient-overlay-first">
+                <pos>0.067708333 0</pos>
+                <size>0.161979167 1</size>
+                <path>${rootpath}/assets/userinterface/nav-gradient-overlay-first.svg</path>
+                <zIndex>61</zIndex>
+            </image>  
+
+
+
+            <!--  Nav: Second overlay layer -->
+            <image name="nav-gradient-overlay-second">
+                <pos>0 0</pos>
+                <size>0.229166667 1</size>
+                <path>${rootpath}/assets/userinterface/nav-gradient-overlay-second.svg</path>
+                <zIndex>59</zIndex>
+            </image>       
+            
+
+
+            <!--  Nav: Background layer -->
+            <image name="nav-background">
+                <pos>0 0</pos>
+                <size>0.229166667 1</size>
+                <path>${rootpath}/assets/userinterface/nav-background.svg</path>
+                <zIndex>12</zIndex>
+            </image>
+
+            <!--  Sidebar: Background layer -->
+            <image name="sidebar-background">
+                <pos>0.854166667 0</pos>
+                <size>0.145833333 1</size>
+                <path>${rootpath}/assets/userinterface/sidebar-background.svg</path>
+                <zIndex>12</zIndex>
+            </image>
+
+            <!--  Wallpaper overlay -->
+            <image name="gradient-background-overlay">
+                <pos>0.229166667 0</pos>
+                <size>0.625 1</size>
+                <path>${rootpath}/assets/userinterface/gradient-overlay-background.svg</path>
+                <zIndex>12</zIndex>
+            </image>
+
+            <!--  Helpsystem  -->
+            <helpsystem name="help">
+                <pos>0.270833333 0.95</pos>
+                <origin>0 0</origin>
+                <textColor>000000</textColor>
+                <iconColor>000000</iconColor>
+                <fontSize>0.020</fontSize>
+                <fontPath>${rootpath}/assets/fonts/MonaSans-Regular.ttf</fontPath>
+                <iconTextSpacing>0.003</iconTextSpacing>
+                <originDimmed>0.5 0</originDimmed>
+                <posDimmed>0.5 0.96</posDimmed>
+                <opacity>1</opacity>
+            </helpsystem>
+
+        </view>
+
+
+
+<!--  SYSTEMVIEW | SYSTEMVIEW | SYSTEMVIEW | SYSTEMVIEW -->
+        <view name="system">
+
+            <!--  Nav: ES-DE logo -->
+            <image name="es-de-logo">
+                <pos>0.020833333 0.037037037</pos>
+                <size>0.1875 0.087314815</size>
+                <path>${rootpath}/assets/userinterface/es-de-logo.svg</path>
+                <zIndex>60</zIndex>
+            </image>
+
+            
+            <!--  Nav: Highlight layer -->
+            <image name="nav-highlight">
+                <pos>0 0.140740741</pos>
+                <size>0.229166667 0.71837037</size>
+                <path>${rootpath}/assets/userinterface/nav-highlight.svg</path>
+                <zIndex>13</zIndex>
+            </image>
+
+
+            <!--  Wallpaper promo -->
+            <image name="backgroundpromo">
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <path>${systemFanartImage}</path>
+                <interpolation>linear</interpolation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <saturation>0</saturation>
+                <zIndex>9</zIndex>
+            </image>
+
+            <!--  Gamecount -->
+            <text name="gameCount">
+                <pos>0.270833333 0.067592593</pos>
+                <size>0.489583333 0</size>
+                <systemdata>gamecount</systemdata>
+                <fontSize>0.032</fontSize>
+                <fontPath>${rootpath}/assets/fonts/HubotSans-Bold.ttf</fontPath>
+                <lineSpacing>1.1</lineSpacing>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>f70f51</color>
+             </text>
+
+            <!--  Systeme name / Title -->
+            <text name="system-name">
+                <systemdata>fullname</systemdata>
+                <pos>0.270833333 0.125</pos>
+                <size>0.489583333 0.3</size>
+                <fontSize>0.072</fontSize>
+                <fontPath>${rootpath}/assets/fonts/HubotSans-Bold.ttf</fontPath>
+                <lineSpacing>1.1</lineSpacing>
+                <color>FFFFFF</color>
+                <verticalAlignment>bottom</verticalAlignment>
+                <container>true</container>
+                <containerStartDelay>1</containerStartDelay>
+                <containerResetDelay>2</containerResetDelay>
+                <letterCase>uppercase</letterCase>
+            </text>
+
+            
+            <!--  System Description -->
+            <text name="system-description">
+                <text>TEST TEST TEST</text>
+                <pos>0.055 0.72</pos>
+                <size>0.5 0.18</size>
+                <fontSize>0.024</fontSize>
+                <lineSpacing>1.1</lineSpacing>
+                <color>BBBBBB</color>
+                <verticalAlignment>top</verticalAlignment>
+                <container>true</container>
+             </text>
+
+            <!--  Random Miximage & Video -->
+            <gameselector name="randomselection">
+            </gameselector>
+            <video name="systembackgroundvideo">
+                <origin>0 0.5</origin>
+                <pos>0.696526042 0.5</pos>
+                <size>0 0.376851852</size>
+                <imageType>miximage</imageType>
+                <videoCornerRadius>.01</videoCornerRadius>
+                <pillarboxes>false</pillarboxes>
+                <zIndex>100</zIndex>
+            </video>
+
+
+            <!--  System Image -->
+             <image name="system-image">
+                <pos>0.270833333 0.481481481</pos><!-- 520 520 -->
+                <size>0.25 0.444444444</size><!-- 480 480 -->
+                <default>${rootpath}/assets/systems/_default.webp</default>
+                <path>${rootpath}/assets/systems/${system.theme}.webp</path>
+                <zIndex>70</zIndex>
+            </image>
+        
+            <!--  Controller Image -->
+            <image name="controller-image">
+                <pos>.925 .91</pos>
+                <origin>.5 .5</origin>
+                <maxSize>.14 .225</maxSize>
+                <path>${rootpath}/assets/system-controllers-outline/${system.theme}.svg</path>
+                <zIndex>100</zIndex>
+            </image>
+            
+            <!--  System Logo Carousel -->
+             <carousel name="systemCarousel">
+                <pos>0 0.5</pos>
+                <size>0.2125 1</size>
+                <origin>0 .5</origin>
+                <type>vertical</type>
+                <staticImage>${rootpath}/assets/system_logos/${system.theme}.svg</staticImage>
+                <defaultImage>${rootpath}/assets/system_logos/${system.theme}.png</defaultImage>
+                <maxItemCount>7</maxItemCount>
+                <itemSize>0.14 0.075</itemSize>
+                <itemScale>1</itemScale>
+                <imageInterpolation>linear</imageInterpolation>
+                <color>00000000</color>
+                <textColor>BBBBBB</textColor>
+                <fontSize>0.055</fontSize>
+                <letterCase>uppercase</letterCase>
+                <lineSpacing>1.2</lineSpacing>
+                <!--<selectedItemMargins>.02 .02</selectedItemMargins>-->
+                <reflectionsOpacity>.25</reflectionsOpacity>
+                <reflectionsFalloff>1.25</reflectionsFalloff>
+                <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+                <unfocusedItemDimming>.5</unfocusedItemDimming>
+                <fastScrolling>true</fastScrolling>
+            </carousel>
+
+
+        </view> 
+<!--  GAMELIST | GAMELIST | GAMELIST | GAMELIST -->
+        <view name="gamelist">
+
+            <!--  System Image -->
+            <image name="system-logo">
+                <pos>0.020833333 0.037037037</pos><!-- 520 520 -->
+                <size>0.1875 0.081898148</size><!-- 480 480 -->
+                <default>${rootpath}/assets/system_logos/_default.svg</default>
+                <path>${rootpath}/assets/system_logos/${system.theme}.svg</path>
+                <color>F00D46</color>
+                <zIndex>60</zIndex>
+            </image>
+
+            <!--  Nav: ES-DE logo -->
+            <image name="es-de-logo-small">
+                <pos>0.020833333 0.915481481</pos>
+                <size>0.09375 0.047481481</size>
+                <path>${rootpath}/assets/userinterface/es-de-logo.svg</path>
+                <zIndex>60</zIndex>
+            </image>
+
+            <!--  Gamelist -->
+            <textlist name="gamelist">
+               <pos>0 0.16</pos>
+               <size>0.229166667 0.703703704</size>
+               <fontSize>0.032</fontSize>
+               <horizontalMargin>0.020833333</horizontalMargin>
+               <selectorHeight>0.051851852</selectorHeight>
+               <selectorVerticalOffset>0</selectorVerticalOffset>
+               <lineSpacing>1.8</lineSpacing>
+               <selectorColor>F00D46</selectorColor>
+               <selectedColor>ffffff</selectedColor>
+               <primaryColor>FFFF00</primaryColor>
+               <secondaryColor>888888</secondaryColor>
+               <fontPath>${rootpath}/assets/fonts/MonaSans-Regular.ttf</fontPath>
+               <horizontalAlignment>left</horizontalAlignment>
+               <zIndex>60</zIndex>
+            </textlist>
+
+            <!--  Systeme name / Title -->
+            <text name="system-name">
+                <systemdata>fullname</systemdata>
+                <pos>0.270833333 0.125</pos>
+                <size>0.489583333 0.3</size>
+                <fontSize>0.072</fontSize>
+                <fontPath>${rootpath}/assets/fonts/HubotSans-Bold.ttf</fontPath>
+                <lineSpacing>1.1</lineSpacing>
+                <color>FFFFFF</color>
+                <verticalAlignment>bottom</verticalAlignment>
+                <container>true</container>
+                <containerStartDelay>1</containerStartDelay>
+                <containerResetDelay>2</containerResetDelay>
+                <letterCase>uppercase</letterCase>
+            </text>
+
+
+            <!--  System Image -->
+            <image name="system-image">
+                <pos>0.875 0.037037037</pos>
+                <size>0.104166667 0.185185185</size>
+                <default>${rootpath}/assets/systems/_default.webp</default>
+                <path>${rootpath}/assets/systems/${system.theme}.webp</path>
+                <zIndex>70</zIndex>
+            </image>
+
+            <!--  Wallpaper promo -->
+            <image name="backgroundpromo">
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <path>${systemFanartImage}</path>
+                <interpolation>linear</interpolation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>9</zIndex>
+            </image>
+            
+            <video name="md_video">
+                <origin>0 1</origin>
+                <pos>0.270833333 0.888888889</pos><!-- 1270 400 -->
+                <maxSize>0.260416667 0.533333333333333</maxSize><!-- 1110 640 -->
+                <imageType>miximage,cover,screenshot,titlescreen,fanart</imageType>
+                <pillarboxes>false</pillarboxes>
+                <zIndex>110</zIndex>
+             </video>
+
+         </view>
+
+</theme>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="440px" height="775.8413px" viewBox="0 0 440 775.8413" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="nav-highlight">
+    <path d="M0 0L440 0L440 154.966L0 154.966L0 0Z" id="nav-highlight-Copy-3" fill="#F00D46" fill-opacity="0.2" fill-rule="evenodd" stroke="none" />
+    <path d="M0 620.875L440 620.875L440 775.841L0 775.841L0 620.875Z" id="nav-highlight-Copy-4" fill="#F00D46" fill-opacity="0.2" fill-rule="evenodd" stroke="none" />
+    <path d="M0 465.338L440 465.338L440 620.305L0 620.305L0 465.338Z" id="nav-highlight-Copy-2" fill="#F00D46" fill-opacity="0.4" fill-rule="evenodd" stroke="none" />
+    <path d="M0 155.406L440 155.406L440 310.372L0 310.372L0 155.406Z" id="nav-highlight-Copy" fill="#F00D46" fill-opacity="0.4" fill-rule="evenodd" stroke="none" />
+    <path d="M0 310.371L440 310.371L440 465.338L0 465.338L0 310.371Z" id="nav-highlight" fill="#F00D46" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

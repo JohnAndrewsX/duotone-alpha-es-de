@@ -1,0 +1,14 @@
+<!--
+    Duotone Alpha (duotone-alpha-es-de)
+    Author: JohnAndrewsX
+    GitHub: https://github.com/JohnAndrewsX
+    X: https://x.com/JohnAndrewsX
+    License: Creative Commons CC-BY-NC-SA
+-->
+
+<theme>
+    <variant name="Default">
+        <include>./default.xml</include>
+    </variant>
+
+</theme>

@@ -1,0 +1,39 @@
+<!--
+    Theme capabilities for duotone-es-de
+
+    Duotone Alpha (duotone-alpha-es-de)
+    Author: JohnAndrewsX
+    GitHub: https://github.com/JohnAndrewsX
+    X: https://x.com/JohnAndrewsX
+    License: Creative Commons CC-BY-NC-SA
+-->
+
+
+<themeCapabilities>
+    <themeName>Duotone Alpha</themeName>
+
+    <aspectRatio>16:9</aspectRatio>
+    <aspectRatio>16:10</aspectRatio>
+
+    <transitions name="fadeAndSlide">
+        <label>Default</label>
+        <selectable>false</selectable>
+        <systemToSystem>instant</systemToSystem>
+        <systemToGamelist>slide</systemToGamelist>
+        <gamelistToGamelist>fade</gamelistToGamelist>
+        <gamelistToSystem>slide</gamelistToSystem>
+        <startupToSystem>slide</startupToSystem>
+    </transitions>
+
+    <suppressTransitionProfiles>
+        <entry>builtin-instant</entry>
+        <entry>builtin-slide</entry>
+        <entry>builtin-fade</entry>
+    </suppressTransitionProfiles>
+
+    <variant name="Default">
+        <label>Default</label>
+        <selectable>true</selectable>
+        <transitions>fadeAndSlide</transitions>
+    </variant>
+</themeCapabilities>

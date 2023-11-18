@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="442px" height="1080px" viewBox="0 0 442 1080" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0.5" y1="0" x2="0.5" y2="1" id="gradient_1">
+      <stop offset="0.1568" stop-color="#001A33"/>
+      <stop offset="0.4928" stop-color="#001A33" stop-opacity="0"/>
+      <stop offset="0.7921" stop-color="#001A33" stop-opacity="0.9607843"/>
+    </linearGradient>
+  </defs>
+  <path d="M 0 0 L 442 0 L 442 1080 L 0 1080 L 0 0 Z" id="navi-gradient-overlay" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none"/>
+</svg>
